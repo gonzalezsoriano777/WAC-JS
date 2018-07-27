@@ -1,0 +1,61 @@
+makeSandwichWith ____
+Get one slice of bread
+Add _____.
+Put a slice of bread on top
+
+function makeSandwichWith(filling){
+Get one slice of bread;
+Add filling;
+Put a slice of bread on top;
+}
+
+makeTurkeySandwich _ham_
+makeSandwichWith('ham')
+
+console.log('My Todos', todos)
+
+
+function sayHiTo(person) {
+ console.log('hi', person);
+ }
+ 
+ sayHiTo('gordon') // person = 'gordon'
+ hi gordon
+ 
+ function sayHiTo(person) {
+  console.log('hi', person);
+ }
+ 
+ 
+ var todos = ['item 1', 'item 2', 'item 3']
+ 
+ function displayTodos() {
+ console.log('My todos:', todos);
+} 
+displayTodos()
+ My todos: ["item 1", "item 2", "item 3"]
+ 
+ function addTodo(){
+  todos.push('new todo');
+ }
+ 
+ displayTodos()
+ My todos: ["item 1", "item 2", "item 3", "item 4"]
+ 
+ function addTodo(){
+  todos.push('new todo');
+  displayTodos();
+ }
+ 
+ addTodo()
+ My todos: ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo"]
+ 
+ function addTodo(){
+  todos.push('new todo');
+  displayTodos();
+ }
+ 
+ addTodo('hello, there')
+ 
+ My todos: 
+ ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo", "hello there"]
