@@ -59,3 +59,42 @@ displayTodos()
  
  My todos: 
  ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo", "hello there"]
+ 
+ function changeTodo(position, newValue){
+  todo[0] = 'some new value';
+  todos[position] = newValue;
+ }
+ 
+ displayTodos()
+ 
+ changeTodo(0, 'changed')
+ 
+ displayTodos()
+ 
+ function changeTodo(position, newValue){
+ todos[position] = newValue;
+ displayTodos();
+ }
+ 
+ displayTodos()
+ 
+ changeTodo(0, 'changed again')
+ 
+ function changeTodo(position, newValue){
+ todos[position] = newValue;
+ displayTodos();
+ }
+ 
+ fucntion deleteTodo(position) {
+  todos.splice(0, 1);
+  displayTodos();
+ }
+ 
+ displayTodos()
+ 
+ deleteTodo(0)
+ 
+ deleteTodo(2)
+ 
+ 
+ 
