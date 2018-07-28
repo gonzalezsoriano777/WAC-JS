@@ -46,9 +46,9 @@ deleteTodo: function(position) {
     }
 
  
-    // If everything's true, make everything false.
+    // Case 1: If everything's true, make everything false.
     if (completedTodos === totalTodos) {
-      // Make everything false
+      // Case 2: Otherwise, Make everything true
       for (var i = 0; i < totalTobos; i++) {
         this.todos[i].completed = false;
       }
