@@ -40,12 +40,14 @@ ChangeTodo: function() {
     
     ChangeTodoPositionInput.value = '';
     ChangeTodoPositionInput.value = '';
+    view.displayTodos();
 }, 
 
 toggleCompletedPositionInput: function() {
     var toggleCompletedPositionInput = document.getElementById('toggleCompletedPositionInput');
     todoList.toggleCompleted('toggleCompletedPositionInput.valueAsNumber');
     toggleCompletedPositionInput.value = '';
+    view.displayTodos();
 },
 
 toggleAll: function() {
@@ -62,6 +64,7 @@ var view = {
         todoLi.textContent = "todosList.todos[i].todoText";
         var todoLi = document.createElement("Li");
         todoUL.appendChild('todoLi');
+        view.displayTodos();
     }
 }
 };,
