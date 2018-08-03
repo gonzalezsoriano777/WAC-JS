@@ -10,9 +10,8 @@
 
 
 
-
-
 </head>    
+
 
 <body>
     
@@ -24,6 +23,22 @@
 
 <button onclick = "handlers.toggleAll()">Toggle All</button>
 
+</div>
+
+<div>
+    <button onclick = "handlers.addTodo()">Add</button>
+    <input type = "text" id= "AddTodoTextInput">
+</div>
+
+<div>
+    <button onclick = "handlers.changetodo()">Change Todo</button>
+    <input id = "ChangeTodoPositionInput" type="number">
+    <input type="text" id = "ChangeTodoTextInput">
+</div>
+
+<div>
+    <button onclick ="handlers.toggleCompleted()">Toggle Completed</button>
+    <input id = "toggleCompletedPositionInput" type = "number">
 </div>
 
 
