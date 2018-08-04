@@ -1,0 +1,119 @@
+var myName = 'Gordon';
+
+function sayName() {
+    var secret = 'watchandcode';
+    console.log(myName);
+    
+}
+
+
+    sayName(); // 'Gordon'
+    console.log(secret);
+    
+// Interludes 2
+
+//Ability = Process*Time
+
+// The most important part of your process
+
+// Data types overview // That I didn't know
+ Objects (can be as complex as you want ) 
+ - {} // todoList, arrays, functions
+ 
+ var todolist = {
+  todos: [],
+  displayTodos: function() {
+    debugger; // Learning the debugger...
+    if (this.todos.length === 0) {
+      console.log('Your todo list is empty!');
+    } else {
+    console.log('My Todos:');
+    for (var i = 0; i < this.todos.length; i++){
+      if (this.todo[i].completed === true) {
+        console.log('(x)', this.todos[i].todoText);
+      }else {
+        console.log('()', this.todos[i].todoText);
+      }
+    }
+  },
+
+addTodo: function(todoText) { // addTodo('hi')
+  debugger;
+  this.todos.push({
+  todoText: todoText,
+  completed: false
+  });
+  this.displayTodos();
+},
+ 
+ 
+ changeTodo: function(position, todoText) {
+  debugger;
+  // this.todos[position] = newValue
+  this.todos[position].todoText = todoText;
+  this.displayTodos();
+},
+deleteTodo: function(position) {
+    debugger; 
+  this.todos.splice(position, 1);
+  this.displayTodos();
+  },
+  
+  toggleCompleted: function(position) {
+    debugger;
+    var todo = this.todos[position];
+    todo.completed = !todo.completed;
+    this.displayTodos();
+  }, 
+  toggleAll: function() {
+    debugger;
+    var totalTodos = this.todos.length;
+    var completedTodos = 0;
+    
+   // Best Way to understand each line of code, rather questioning what your exactly coding.
+   
+   // Run with Debugger
+   ---------------------------
+   function runWithDebugger(ourFunction) {
+   debugger;
+   ourFunction();
+   }
+   
+   runWithDebugger(function logTenNumbers) {
+   for (var i = 0; i < 10; i++) {
+    console.log(i);
+    }
+   });
+   
+   // SetTimeout
+  ------------
+  setTimeout (function) {
+   console.log('Wake up Gordon');
+  }, 5000)
+  
+  // forEach
+  --------------
+  var student = ['jonathan', 'jenny', 'elliot'];
+  
+  function logName(name) {
+   console.log(name);
+  }
+  
+  logName(student[0])
+  
+    logName(student[1])
+    
+      logName(student[2])
+      
+      student.forEach(logName)
+      student.forEach(function, logName(name) {
+      console.log(name);
+      })
+      
+      function forEach(myArray, myFunction) {
+      for (var i = 0; i < myArray.length; i++ ) {
+        myFunction(myArray[i]);
+        }
+      }
+      
+      // The Cheatsheet, Indetifys what situation you are in , in specific cases.
